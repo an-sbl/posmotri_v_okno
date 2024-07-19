@@ -44,18 +44,20 @@ ol {
 .content {
   display: grid;
   grid-template-columns: 711px 399px;
-  align-items: end;
   gap: 30px;
   margin: 0 auto;
 }
 
-.result__video-container {
-  margin-bottom: 16px;
+.result{
+  display: flex;
+  align-self: end;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .result__video {
   width: 100%;
-  height: 100%;
+  height: 386px;
   object-fit: cover;
   object-position: center;
 }
@@ -84,6 +86,7 @@ ol {
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 18px;
+  line-height: 21.6px;
 }
 
 .search-form__label {
@@ -161,7 +164,7 @@ ol {
 }
 
 .title {
-  font-family: Oswald;
+  font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 75px;
   line-height: 70.5px;
@@ -214,6 +217,10 @@ ol {
   color: #ffffff;
   text-decoration: none;
   
+  &:active{
+    background-color: #545050;
+  }
+
   &:hover {
     text-decoration-line: underline;
     text-underline-offset: 6px;
@@ -247,6 +254,7 @@ ol {
 
 .content__video-card-description {
   font-weight: 400;
+  font-size: 18px;
   line-height: 16.2px;
 }
 
@@ -258,9 +266,10 @@ ol {
   font-family: inherit;
   font-weight: 700;
   font-size: inherit;
+  line-height: 21.6px;
   background-color: transparent;
   cursor: pointer;
-
+ 
   &:hover {
     text-decoration: underline;
   }
