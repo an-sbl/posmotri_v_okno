@@ -9,7 +9,8 @@ html {
 }
 
 .page {
-  margin: 133px 30px;
+  margin: auto;
+  padding: 133px 30px;
   color: #fff;
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
